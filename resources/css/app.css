@@ -1,11 +1,83 @@
-@import 'tailwindcss';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
-@source '../../storage/framework/views/*.php';
-@source '../**/*.blade.php';
-@source '../**/*.js';
+/* ===============================
+   Employee Management Custom CSS
+================================ */
 
-@theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
+.page-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.page-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #1f2937;
+}
+
+.custom-input {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 10px;
+    border: 1px solid #d1d5db;
+    transition: 0.3s ease;
+}
+
+.custom-input:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+    outline: none;
+}
+
+.custom-btn-primary {
+    background-color: #6366f1;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.custom-btn-primary:hover {
+    background-color: #4f46e5;
+}
+
+.custom-btn-danger {
+    background-color: #ef4444;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 8px;
+}
+
+.custom-btn-danger:hover {
+    background-color: #dc2626;
+}
+
+.custom-btn-warning {
+    background-color: #f59e0b;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 8px;
+}
+
+.custom-btn-warning:hover {
+    background-color: #d97706;
+}
+
+.custom-table th {
+    background: #f3f4f6;
+    padding: 12px;
+    text-align: left;
+}
+
+.custom-table td {
+    padding: 12px;
+}
+
+.custom-table tr:hover {
+    background-color: #f9fafb;
 }
