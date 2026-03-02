@@ -112,7 +112,7 @@
 
                                 <div class="col-md-6 mb-2">
                                     <input type="text" name="addresses[0][zip_code]" class="form-control"
-                                        placeholder="Zip Code" pattern="\d{6}" maxlength="6"
+                                        placeholder="Zip Code" maxlength="6"
                                         title="Enter exactly 6 digit pincode" required>
                                 </div>
                             </div>
@@ -190,7 +190,6 @@
     name="addresses[${index}][zip_code]"
     class="form-control"
     placeholder="Zip Code"
-    pattern="\d{6}"
     maxlength="6"
     title="Enter exactly 6 digit pincode"
     required>
